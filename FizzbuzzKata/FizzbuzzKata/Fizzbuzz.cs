@@ -6,7 +6,10 @@ namespace FizzbuzzKata
     {
         public string FizzbuzzMethod(int enterNumber)
         {
-            return enterNumber.ToString();
+            if (enterNumber % 3 == 0)
+                return "Fizz";
+            else 
+                return enterNumber.ToString();
         }
 
         static void Main(string[] args)
