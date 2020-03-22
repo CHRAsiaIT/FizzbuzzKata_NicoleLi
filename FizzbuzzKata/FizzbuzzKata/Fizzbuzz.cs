@@ -8,8 +8,13 @@ namespace FizzbuzzKata
         {
             if (enterNumber % 3 == 0)
                 return "Fizz";
-            else 
-                return enterNumber.ToString();
+            else
+            {
+                if (enterNumber % 5 == 0)
+                    return "Buzz";
+                else
+                    return enterNumber.ToString();
+            }   
         }
 
         static void Main(string[] args)
