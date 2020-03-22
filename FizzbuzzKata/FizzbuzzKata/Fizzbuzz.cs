@@ -6,14 +6,19 @@ namespace FizzbuzzKata
     {
         public string FizzbuzzMethod(int enterNumber)
         {
-            if (enterNumber % 3 == 0)
-                return "Fizz";
+            if (enterNumber % 15 == 0)
+                return "FizzBuzz";
             else
             {
-                if (enterNumber % 5 == 0)
-                    return "Buzz";
+                if (enterNumber % 3 == 0)
+                    return "Fizz";
                 else
-                    return enterNumber.ToString();
+                {
+                    if (enterNumber % 5 == 0)
+                        return "Buzz";
+                    else
+                        return enterNumber.ToString();
+                }                
             }   
         }
 
