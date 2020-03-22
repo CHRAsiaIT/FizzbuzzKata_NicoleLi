@@ -48,5 +48,11 @@ namespace FizzbuzzKata.UnitTests
         {
             Assert.AreEqual("FizzBuzz", _fizzbuzz.FizzbuzzMethod(15));
         }
+
+        [TestMethod]
+        public void Should_ReturnBuzz_WhenEnterThirty()
+        {
+            Assert.AreEqual("FizzBuzz", _fizzbuzz.FizzbuzzMethod(30));
+        }
     }
 }
